@@ -1659,3 +1659,37 @@ body {
     cursor: pointer;
   }
 }
+
+.faq {
+  padding-top: 60px;
+  padding-bottom: 104px;
+}
+
+.faq__title {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1280px) {
+  .faq {
+    padding-top: 43px;
+    padding-bottom: 82px;
+  }
+}
+
+@media (max-width: 962px) {
+  .faq {
+    padding-top: 76px;
+    padding-bottom: 110px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq {
+    padding-top: 33px;
+    padding-bottom: 61px;
+  }
+
+  .faq__title {
+    margin-bottom: 15px;
+  }
+}
