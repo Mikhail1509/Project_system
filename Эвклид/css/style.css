@@ -941,4 +941,177 @@ body {
   }
 }
 
+/* Кнопки-ссылки */
+
+.btn {
+  display: inline-block;
+  padding: 25px 39px;
+  font-family: var(--montserrat), sans-serif;
+  font-size: 16px;
+  font-weight: var(--bold);
+  line-height: 20px;
+  color: var(--white);
+  text-align: center;
+  outline: none;
+  background-color: var(--orange);
+  cursor: pointer;
+  transition: background-color var(--short);
+}
+
+/* .btn:hover:not(:active) {
+  background-color: var(--orange-transparent);
+} */
+
+.btn:focus-visible:not(:hover:not(:active)) {
+  outline: 2px solid var(--orange-transparent);
+  outline-offset: 5px;
+  background-color: var(--orange-transparent);
+}
+
+.btn:active {
+  background-color: var(--dark-orange);
+}
+
+.btn--big {
+  min-width: 280px;
+  border-radius: var(--border-btn);
+  font-size: 23px;
+  font-weight: var(--bold);
+  line-height: 28px;
+  pointer-events: auto;
+}
+
+.btn--border-accent {
+  padding: 17px 36px;
+  border: 3px solid var(--orange);
+  border-radius: var(--border-btn);
+  color: var(--white);
+  background-color: transparent;
+  transition: background-color var(--short), border-color var(--short), color var(--short);
+}
+
+/* .btn--border-accent:hover:not(:active) {
+  background-color: var(--orange-about);
+} */
+
+.btn--border-accent:focus-visible:not(:hover:not(:active)) {
+  outline: 2px solid var(--orange-about);
+  outline-offset: 5px;
+  background-color: var(--orange-about);
+}
+
+.btn--border-accent:active {
+  border-color: var(--dark-orange);
+  background-color: var(--dark-orange);
+}
+
+.btn--border {
+  border: 1px solid var(--dark);
+  font-weight: var(--regular);
+  color: var(--dark);
+  background-color: transparent;
+  transition: color var(--short), background-color var(--short), border-color var(--short);
+}
+
+/* .btn--border:hover:not(:active) {
+  color: var(--white);
+  background-color: var(--gray-btn);
+} */
+
+.btn--border:focus-visible:not(:hover:not(:active)) {
+  color: var(--white);
+  outline: 2px solid var(--gray-btn);
+  outline-offset: 5px;
+  background-color: var(--gray-btn);
+}
+
+.btn--border:active {
+  border-color: var(--dark);
+  background-color: var(--dark);
+}
+
+@media (max-width: 1280px) {
+  .btn--big {
+    min-width: 280px;
+    padding: 25px 39px;
+    border-radius: 16px;
+    font-size: 23px;
+    line-height: 28px;
+  }
+
+  .btn--border-accent {
+    padding: 17px 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn--big {
+    min-width: 280px;
+    padding: 25px 39px;
+    border-radius: 16px;
+    font-size: 23px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__btn {
+    min-width: 162px;
+    padding: 13px 27px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .btn--border-accent {
+    padding-top: 11px;
+    padding-bottom: 9px;
+    border-width: 2px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--orange);
+    background-color: transparent;
+  }
+
+  .btn--border-accent:hover:not(:active) {
+    color: var(--white);
+    background-color: var(--orange-about);
+  }
+
+  .btn--border-accent:focus-visible:not(:hover:not(:active)) {
+    color: var(--white);
+    outline: 2px solid var(--orange-about);
+    outline-offset: 5px;
+    background-color: var(--orange-about);
+    background-color: var(--orange-about);
+  }
+
+  .btn--border-accent:active {
+    border-color: var(--dark-orange);
+    background-color: var(--dark-orange);
+  }
+
+  .btn--border {
+    font-size: 12px;
+    font-weight: var(--regular);
+    line-height: 15px;
+    text-align: center;
+  }
+}
+
+@media (any-hover: hover) {
+  .btn:hover:not(:active) {
+    background-color: var(--orange-transparent);
+  }
+
+  .btn--border-accent:hover:not(:active) {
+    background-color: var(--orange-about);
+  }
+
+  .btn--border:hover:not(:active) {
+    color: var(--white);
+    background-color: var(--gray-btn);
+  }
+}
 
