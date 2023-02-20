@@ -67,3 +67,57 @@
     url("../fonts/montserrat-v25-latin_cyrillic-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+:root {
+  --border-radius: 32px;
+  /* Шрифты */
+
+  --montserrat: "Montserrat";
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+  --extrabold: 800;
+  --dafault-fs: 16px;
+  --dafault-lh: 32px;
+  /* Цвета */
+  --dark: #333333;
+  --footer-bc: #000000;
+  --footer-input: #414141;
+  --dark-transparent: rgba(0, 0, 0, .5);
+  --gray-blue: #576b8f;
+  --gray-btn: #666666;
+  --gray-border: #cacaca;
+  --white: #ffffff;
+  --orange: #ff9900;
+  --orange-transparent: #ffb84d;
+  --orange-about: #ff9900;
+  --dark-orange: #e1670e;
+  --green: #97ee3f;
+  /* Sizes */
+  --body-min-width: 320px;
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+  --border-btn: 16px;
+  /* Transition */
+  --short: .3s;
+  --medium-trans: .5s;
+  /* hero-slider */
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-width: 15px;
+  --swiper-pagination-bullet-height: 15px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: .4;
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-padding: 15px;
+    --dafault-fs: 14px;
+    --dafault-lh: 28px;
+
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
+  }
+}
