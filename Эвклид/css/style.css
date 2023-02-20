@@ -1227,7 +1227,6 @@ body {
   background-image: url(../img/about-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .card-detail__content {
@@ -1344,7 +1343,7 @@ body {
   border: 1px solid var(--gray-border);
   border-radius: var(--border-radius);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: inherit;
 }
 
 .card::before {
@@ -1354,7 +1353,7 @@ body {
   width: calc(190 / (870 - 60 - 116) * 100%);
   margin-right: 50px;
   padding-top: calc(165 / (870 - 60 - 116) * 100%);
-  background-image: inherit;
+/*   background-image: inherit; */
   background-repeat: no-repeat;
   background-size: contain;
 }
