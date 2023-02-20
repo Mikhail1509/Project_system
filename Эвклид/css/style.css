@@ -1309,7 +1309,7 @@ body {
     display: block;
     width: 100%;
     margin-bottom: 8px;
-    padding-top: calc(200 / 290 * 100%);
+    padding-top: calc(200 / 290 * 50%);
     border-radius: 16px;
     background-color: var(--gray-blue);
     background-image: inherit;
