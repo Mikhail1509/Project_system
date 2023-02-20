@@ -1214,3 +1214,124 @@ body {
   }
 }
 
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 870px;
+  min-height: 622px;
+  border-radius: var(--border-radius);
+  background-color: var(--gray-blue);
+  background-image: url(../img/about-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-detail__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  border-radius: var(--border-radius);
+  color: var(--white);
+  background-color: var(--dark-transparent);
+}
+
+.card-detail__text {
+  max-width: 433px;
+  margin: 0;
+  margin-right: auto;
+  font-weight: var(--bold);
+  line-height: 32px;
+}
+
+.card-detail__btn {
+  margin-left: auto;
+}
+
+@media (max-width: 1440px) {
+  .card-detail {
+    max-width: 100%;
+  }
+
+  .card-detail__text {
+    max-width: 454px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card-detail {
+    min-height: 640px;
+  }
+}
+
+@media (max-width: 962px) {
+  .card-detail {
+    min-height: 650px;
+  }
+
+  .card-detail__content {
+    padding: 34px 34px;
+  }
+
+  .card-detail__text {
+    max-width: calc(366 / (668 - 34 - 34) * 100%);
+    margin: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .card-detail__text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .card-detail__btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-detail {
+    justify-content: flex-start;
+    min-height: auto;
+    /* background-image: url("../img/about-bg@320.jpg"); */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .card-detail::before {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-top: calc(200 / 290 * 100%);
+    border-radius: 16px;
+    background-color: var(--gray-blue);
+    background-image: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .card-detail__content {
+    padding: 0;
+    color: var(--dark);
+    background-color: transparent;
+  }
+
+  .card-detail__text {
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: var(--regular);
+    line-height: 28px;
+  }
+
+  .card-detail__btn {
+    min-width: 162px;
+  }
+}
