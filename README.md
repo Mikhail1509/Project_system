@@ -1,8 +1,2 @@
-# Hi there, I'm [Mikhail]
-
-## Учебный проект
-Применение полученных знаний на практике
-
-![](https://github.com/Mikhail1509/Project_system/Эвклид) 
-
-### Beginner (intern) web developer. I study in the educational platform Skillbox.
+# Hi there, I'm [Mikhail](https://t.me/Misha_Gorodcov.) ![](https://Mikhail1509.github.io/Project_system/Эвклид/) 
+### Beginner (intern) web developer. I study in the educational platform Skillbox 
